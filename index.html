@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CourseCompass</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="Home.html"><img src="Logo Horizontal.svg" width="200px" class="Logo"></a>     
+    </div>
+    <div class="container">
+        <h1 class="h1">Course Compass</h1>
+        <div>
+            <label for="gpa" class="label">GPA:</label>
+            <input type="number" id="gpa" step="0.01" min="0" max="4" placeholder="Enter your GPA">
+        </div>
+        
+        <div>
+            <label for="preferredCourses" class="label">Preferred Courses:</label>
+            <input type="text" id="preferredCourses" placeholder="Enter preferred courses (Comma Separated)">
+        </div>
+        
+        <div>
+            <label for="location" class="label">Location:</label>
+            <input type="text" id="location" placeholder="Enter preferred location (Comma Separated)">
+        </div>
+        
+        <button onclick="recommendColleges()">Get Recommendations</button>
+        
+        <!-- Recommended Colleges section initially hidden -->
+        <div id="recommendedColleges" style="display: none;">
+            <h2 class="h2">Recommended Colleges:</h2>
+            <table class="recommendations-table">
+                <thead>
+                    <tr>
+                        <th>College Name</th>
+                        <th>Location</th>
+                        <th>Subject</th>
+                        <th>GPA</th>
+                    </tr>
+                </thead>
+                <tbody id="recommendations">
+                    <!-- Your table content goes here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>

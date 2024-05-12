@@ -1,0 +1,105 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+    line-height: 1.6;
+    background-image: url('7xm.xyz262283.jpg'); /* Path to your local background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+}
+
+.navbar {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    flex: 1;
+}
+
+.buttons-container {
+    display: flex;
+    gap: 10px;
+}
+
+.Logo {
+    width: 150px;
+    height: auto;
+}
+
+.button, .button2 {
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #4a90e2;
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+    font-weight: bold;
+}
+
+.button:hover, .button2:hover {
+    background-color: #357bd8;
+}
+
+.para {
+    padding: 45px;
+    text-align: center;
+    background-color: rgba(242, 242, 242, 0.8); /* Semi-transparent background color */
+    border-radius: 10px; /* Curved edges */
+    max-width: 800px; /* Limit the maximum width */
+    position: relative; /* Set position to relative */
+    top: -50px; /* Move the box up by 50 pixels */
+    margin: auto; /* Center the box horizontally */
+}
+
+.para p {
+    font-size: 20px; /* Font size of the text */
+    color: black; /* Font color */
+}
+
+
+
+
+
+.CC {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footers {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+.footer a {
+    text-decoration: none; /* Remove underline from all anchor tags within the footer */
+    color: inherit; /* Inherit the color from the parent element */
+}
